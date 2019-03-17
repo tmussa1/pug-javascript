@@ -6,5 +6,7 @@ You should build your application in this repo cloned for you in Github Classroo
 
 I have 3 products in the catalogue to start with and the user can hit http://localhost:8080/products/ to add more products. The data gets persisted in an array of json objects for the duration of the session.
 
+https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/homePage.PNG
+
 
 

@@ -8,5 +8,10 @@ I have 3 products in the catalogue to start with and the user can hit http://loc
 
 ![Homepage](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/homePage.PNG)
 
+Adding a new item
+
+![Homepage](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/adding.PNG)
+
+
 
 

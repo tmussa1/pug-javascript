@@ -5,13 +5,18 @@
 **Homepage**
 ![Homepage](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/homePage.PNG)
 
+**Form**
+![form](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/form.PNG)
+
 **Adding a new item**
 
-![Adding](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/adding.PNG)
+![Adding](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/adding.PNG)
 
 **The newly added item is displayed in the list**
 
-![Added](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/added.PNG)
+![Added](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/added.PNG)
+
+**The newly added item is displayed in the homepage**
 
 
 

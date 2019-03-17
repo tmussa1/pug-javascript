@@ -1,0 +1,35 @@
+doctype
+html( lang="en" )
+    head
+        title Clothing Store
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Clothing Store with Jade' )
+        link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body(style="padding-bottom:10rem;")
+        <br/>
+        strong Please enter items to the cataloge
+        <br/>
+        .row
+            .col-md-4
+                form(method='POST' action='/products/addProduct')
+                    .input
+                        label(for="productId") Product Id:
+                        input#productId.form-control(type="number", name="productId")
+                    .input
+                        label(for="productName") Product Name:
+                        input#productName.form-control(type="text", name="productName")
+                    .input
+                        label(for="price") Price:
+                        input#price.form-control(type="number", name="price")
+                    .input
+                        label(for="description") Desription:
+                        input#description.form-control(type="text", name="description")
+                    <br/>
+                    .actions
+                        input#Add.btn.btn-primary(type="submit", value="Add Product")
+        p= "#{JSON.stringify(listOfProducts)}"
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )

@@ -17,3 +17,6 @@ a {
 .productName{
   font-weight: bold;
 }
+.card{
+  width: 18rem;
+}

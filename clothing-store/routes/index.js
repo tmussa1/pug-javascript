@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var productsDB = require('.././model/productsDB');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { listOfProducts: productsDB.products});
 });
 
 module.exports = router;

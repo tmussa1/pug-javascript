@@ -10,3 +10,10 @@ a {
 .row{
   margin-left: 80px;
 }
+
+.titlePage{
+  margin-left: 95px;
+}
+.productName{
+  font-weight: bold;
+}

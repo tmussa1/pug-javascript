@@ -3,9 +3,9 @@ var router = express.Router();
 var productsDB = require('.././model/productsDB');
 
 router.get('/', (req, res, next) =>{
-    var listOfProducts = [];
-    listOfProducts = productsDB.products;
+    var listOfProducts = productsDB.products;
     res.render('products', listOfProducts);
+    //res.send(listOfProducts);
     next();
 });
 

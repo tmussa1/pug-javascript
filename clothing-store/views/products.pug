@@ -17,19 +17,21 @@ html( lang="en" )
                 form(method='POST' action='/products/addProduct')
                     .input
                         label(for="productId") Product Id:
-                        input#productId.form-control(type="number", name="productId")
+                        input#productId.form-control(type="text", name="productId")
                     .input
                         label(for="productName") Product Name:
                         input#productName.form-control(type="text", name="productName")
                     .input
                         label(for="price") Price:
-                        input#price.form-control(type="number", name="price")
+                        input#price.form-control(type="text", name="price")
                     .input
                         label(for="description") Desription:
                         input#description.form-control(type="text", name="description")
                     <br/>
                     .actions
                         input#Add.btn.btn-primary(type="submit", value="Add Product")
-        p= "#{JSON.stringify(listOfProducts)}"
+        ul
+            each product in listOfProducts
+                li= product.productName
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )

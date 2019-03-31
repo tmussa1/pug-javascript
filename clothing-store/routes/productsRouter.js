@@ -2,22 +2,19 @@ var multer = require('multer');
 var upload = multer({dest : 'public/images'})
 var express = require('express');
 var router = express.Router();
-var Product = require('../model/products');
+var Product = require('../model/products.js');
 
 router.get('/', (req, res, next) =>{
     Product.find({}, (err, products)=>{
         if(err) {
-            console.log(err);
+            res.send(err);
         }
-        res.send(products);
+    res.render('products', {listOfProducts : products});
     });
-
-   // res.render('products', {listOfProducts : products});
-    next();
 });
 
 router.get('/:name', (req, res, next) =>{
-    var name = req.param.name;
+    var name = req.params.name;
 
     Product.findOne({name : name}, (err, product)=>{
         if(err) {
@@ -28,7 +25,6 @@ router.get('/:name', (req, res, next) =>{
             price: product.price
         });
     });
-    next();
 });
 
 router.post('/addProduct', upload.single('imageUrl'), (req, res, next)=>{

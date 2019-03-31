@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Product = require('../model/products')
+var Product = require('../model/products.js')
 
 router.get('/', (req, res, next) =>{
   Product.find({}, (err, products)=>{

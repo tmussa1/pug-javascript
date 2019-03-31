@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 
-var productSchema = mongoose.Schema({
-    name: String,
-    price: Number,
-    description: String,
-    imageUrl: String
+var productSchema = new mongoose.Schema({
+    name: 'string',
+    price: 'number',
+    description: 'string',
+    imageUrl: 'string'
 });
 
 var Product = mongoose.model('Product', productSchema);

@@ -8,10 +8,9 @@ var indexRouter = require('./routes/index');
 var productsRouter = require('./routes/productsRouter');
 var app = express();
 
-var mongoose= require('mongoose')
+var mongoose= require('mongoose');
 
-mongoose.connect(`mongodb+srv://tofik:mongotofik@cluster0-skahm.mongodb.net/
-clothing-store-db?retryWrites=true`, {useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://tofik:mongotofik@cluster0-skahm.mongodb.net/clothing-store-db?retryWrites=true`, {useNewUrlParser: true});
 var db = mongoose.connection;
 db.on('error', (err)=>{
   console.error(`connection error:${err}`);

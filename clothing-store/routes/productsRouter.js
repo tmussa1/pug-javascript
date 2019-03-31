@@ -80,4 +80,13 @@ router.post('/edit/:product_id', (req, res, next)=>{
       })
   });
 
+  router.get('/delete/:product_id', (req, res, next)=>{
+    Product.deleteOne({_id: req.params.product_id}, function(err){
+        if(err){
+            console.log(err);
+        }
+        res.redirect('/');
+    });
+  });
+
 module.exports = router;

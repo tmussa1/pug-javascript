@@ -9,7 +9,6 @@ router.get('/', (req, res, next) =>{
       }
       res.render('index', { listOfProducts: products});
   });
-  next();
 });
 
 module.exports = router;

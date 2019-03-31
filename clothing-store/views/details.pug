@@ -22,18 +22,13 @@ html( lang="en" )
             ul.nav.navbar-nav
                 li.active: a( href="/") Home
                 li: a( href="/products" ) Add Products
-        .panel.panel-default
-            each product in listOfProducts
-                .panel-heading.col-md-2= product.name
-                .panel-body.col-md-2= product.description
-                .panel-body.col-md-2= product.price 
-                .panel-body.col-md-2.img 
-                    image(src = product.imageUrl height="40" width="40" alt="Image doesn't exist")
-                .panel-body.col-md-2
-                    a(href = "/products/" + product.name) Show Details
-                .panel-body.col-md-1
-                    a(href = "/products/edit/" + product._id) Edit
-                .panel-body.col-md-1
-                    a(href = "/products/delete/" + product._id) Delete
+        .jumbotron
+            h3 
+                strong This #{product.name} is of superior quality
+            p #{product.description}
+            p 
+                strong It will be all yours for just #{product.price} 
+            .img
+                image(src = product.imageUrl height="200" width="600" alt="Image doesn't exist")
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )

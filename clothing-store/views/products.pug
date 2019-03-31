@@ -30,8 +30,8 @@ html( lang="en" )
                         label(for="productId") Product Id:
                         input#productId.form-control(type="text", name="productId")
                     .input
-                        label(for="productName") Product Name:
-                        input#productName.form-control(type="text", name="productName")
+                        label(for="name") Product Name:
+                        input#productName.form-control(type="text", name="name")
                     .input
                         label(for="price") Price:
                         input#price.form-control(type="text", name="price")
@@ -48,10 +48,10 @@ html( lang="en" )
         ul.list-group
             each product in listOfProducts
                 .row 
-                    li.list-group-item.col-md-2.productName= product.productName 
+                    li.list-group-item.col-md-2.productName= product.name 
                     li.list-group-item.col-md-2= product.description
                     li.list-group-item.col-md-2= product.price
                     .img 
-                        img(src = product.imageUrl)
+                        image(src = product.imageUrl height="40" width="40" alt="Image doesn't exist")
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )

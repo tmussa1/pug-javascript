@@ -25,7 +25,7 @@ html( lang="en" )
         <br/>
         .row
             .col-md-6
-                form(method='POST' action='/products/addProduct')
+                form(method='POST' action='/products/addProduct' enctype='multipart/form-data')
                     .input
                         label(for="productId") Product Id:
                         input#productId.form-control(type="text", name="productId")
@@ -38,6 +38,9 @@ html( lang="en" )
                     .input
                         label(for="description") Desription:
                         input#description.form-control(type="text", name="description")
+                    .input
+                        label(for="imageUrl") Upload Image:
+                        input#imageUrl.form-control(type="file", name="imageUrl")
                     <br/>
                     .actions
                         input#Add.btn.btn-primary(type="submit", value="Add Product")
@@ -48,5 +51,7 @@ html( lang="en" )
                     li.list-group-item.col-md-2.productName= product.productName 
                     li.list-group-item.col-md-2= product.description
                     li.list-group-item.col-md-2= product.price
+                    .img 
+                        img(src = product.imageUrl)
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )

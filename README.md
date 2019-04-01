@@ -8,32 +8,32 @@
 
 **Adding Product**
 
-![form](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/views/README-images/adding.PNG)
+![form](https://github.com/HarvardDCENode/assignment-4-tmussa1/blob/master/clothing-store/views/README-images/adding.PNG)
 
 
 **New item is added below**
 
 
-![Adding](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/views/README-images/addedToForm.PNG)
+![Adding](https://github.com/HarvardDCENode/assignment-4-tmussa1/blob/master/clothing-store/views/README-images/addedToForm.PNG)
 
 
 **The newly added item is displayed in the homepage**
 
 
-![Added](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/views/README-images/addedToHomePage.PNG)
+![Added](https://github.com/HarvardDCENode/assignment-4-tmussa1/blob/master/clothing-store/views/README-images/addedToHomePage.PNG)
 
 
 **Showing details of a product**
 
 
-![ChangedHomePage](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/views/README-images/details.PNG)
+![ChangedHomePage](https://github.com/HarvardDCENode/assignment-4-tmussa1/blob/master/clothing-store/views/README-images/details.PNG)
 
 
 **Editing a product**
 
-![ChangedHomePage](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/views/README-images/editing.PNG)
+![ChangedHomePage](https://github.com/HarvardDCENode/assignment-4-tmussa1/blob/master/clothing-store/views/README-images/editing.PNG)
 
 
 **The3 first element is deleted**
 
-![ChangedHomePage](https://github.com/HarvardDCENode/assignment-3-tmussa1/blob/master/clothing-store/views/README-images/deleted.PNG)
+![ChangedHomePage](https://github.com/HarvardDCENode/assignment-4-tmussa1/blob/master/clothing-store/views/README-images/deleted.PNG)

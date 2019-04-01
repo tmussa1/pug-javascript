@@ -22,18 +22,29 @@ html( lang="en" )
             ul.nav.navbar-nav
                 li.active: a( href="/") Home
                 li: a( href="/products" ) Add Products
-        .panel.panel-default
-            each product in listOfProducts
-                .panel-heading.col-md-2= product.name
-                .panel-body.col-md-2= product.description
-                .panel-body.col-md-2= product.price 
-                .panel-body.col-md-2.img 
-                    image(src = product.imageUrl height="40" width="40" alt="Image doesn't exist")
-                .panel-body.col-md-2
-                    a(href = "/products/" + product.name) Show Details
-                .panel-body.col-md-1
-                    a(href = "/products/edit/" + product._id) Edit
-                .panel-body.col-md-1
-                    a(href = "/products/delete/" + product._id) Delete
+        div
+            table.table.table-striped
+                thead
+                    tr 
+                        th Name
+                        th Price
+                        th Description
+                        th Details
+                        th Edit
+                        th Delete
+                tbody
+                    each product in listOfProducts
+                        tr
+                            td= product.name
+                            td= product.price
+                            td= product.description
+                            td
+                                image(src = product.imageUrl height="40" width="40" alt="Image doesn't exist")
+                            td
+                                a(href = "/products/" + product.name) Show Details
+                            td
+                                a(href = "/products/edit/" + product._id) Edit
+                            td 
+                                a(href = "/products/delete/" + product._id) Delete
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )

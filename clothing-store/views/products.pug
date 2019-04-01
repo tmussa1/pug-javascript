@@ -23,8 +23,8 @@ html( lang="en" )
                 li: a( href="/products" ) Add Products
         h4.titlePage Please add items to the catalogue
         <br/>
-        .row
-            .col-md-6
+        .rowform
+            .col-md-12
                 form(method='POST' action='/products/addProduct' enctype='multipart/form-data')
                     .input
                         label(for="name") Product Name:
